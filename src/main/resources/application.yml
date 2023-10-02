@@ -5,14 +5,14 @@ spring:
       hibernate:
         format_sql: true
     defer-datasource-initialization: true
-
-  datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
   h2:
     console:
       enabled: true
-
-jwt:
-  issuer: ajufresh@gamil.com
-  secret_key: study_springboot
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            scope:
+              - email
+              - profile

@@ -1,11 +1,10 @@
-package jwt;
+package me.JH.springbootdeveloper1.config.jwt;
 
 import io.jsonwebtoken.Header;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.Builder;
 import lombok.Getter;
-import me.JH.springbootdeveloper1.config.jwt.JwtProperties;
 
 import java.time.Duration;
 import java.util.Date;
